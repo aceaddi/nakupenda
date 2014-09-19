@@ -52,7 +52,7 @@ public class PedometerSettings {
     
     public float getBodyWeight() {
         try {
-            return Float.valueOf(mSettings.getString("body_weight", "50").trim());
+            return Float.valueOf(mSettings.getString("body_weight", "150").trim());
         }
         catch (NumberFormatException e) {
             // TODO: reset value, & notify user somehow
